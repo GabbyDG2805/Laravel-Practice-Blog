@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+	$name = 'Gabby';
+
+	$nextLessons = DB::table('lessons')->get();
+
+    return view('welcome', compact('name', 'nextLessons'));
 });

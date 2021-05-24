@@ -21,9 +21,9 @@
                 margin: 0;
             }
 
-            .full-height {
+/*            .full-height {
                 height: 100vh;
-            }
+            }*/
 
             .flex-center {
                 align-items: center;
@@ -65,7 +65,7 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref {{-- full-height --}}">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -91,5 +91,15 @@
                 </div>
             </div>
         </div>
+        <h1>Hello, I'm <?= $name ?></h1>
+
+        <h3>Next Lessons:</h3>
+
+        <ol>
+            @foreach ($nextLessons as $lesson)
+                <li>{{ $lesson->lesson }}</li>
+            @endforeach
+        </ol>
+
     </body>
 </html>
