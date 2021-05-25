@@ -91,7 +91,6 @@
                 </div>
             </div>
         </div>
-        <h1>Hello, I'm <?= $name ?></h1>
 
         <h3>Next Lessons:</h3>
 

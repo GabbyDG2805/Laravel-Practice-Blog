@@ -11,11 +11,5 @@
 |
 */
 
-Route::get('/', function () {
 
-	$name = 'Gabby';
-
-	$nextLessons = App\Lesson::Incomplete();
-
-    return view('welcome', compact('name', 'nextLessons'));
-});
+Route::get('/', 'LessonsController@index');
