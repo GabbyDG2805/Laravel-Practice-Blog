@@ -15,7 +15,7 @@ Route::get('/', function () {
 
 	$name = 'Gabby';
 
-	$nextLessons = DB::table('lessons')->get();
+	$nextLessons = App\Lesson::Incomplete();
 
     return view('welcome', compact('name', 'nextLessons'));
 });

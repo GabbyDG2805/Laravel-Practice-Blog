@@ -17,7 +17,7 @@ class CreateLessonsTable extends Migration
             $table->increments('id');
             $table->integer('episode');
             $table->text('lesson');
-            $table->boolean('done?');
+            $table->boolean('done?')->default(false);
         });
     }
 
