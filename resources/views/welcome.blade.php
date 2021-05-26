@@ -92,13 +92,5 @@
             </div>
         </div>
 
-        <h3>Next Lessons:</h3>
-
-        <ol>
-            @foreach ($nextLessons as $lesson)
-                <li>{{ $lesson->lesson }}</li>
-            @endforeach
-        </ol>
-
     </body>
 </html>
