@@ -7,7 +7,9 @@
       </div>
 
       <div class="col-4 text-center">
-        <a class="blog-header-logo text-dark" href="#">Large</a>
+        @if(Auth::check())
+          <a class="blog-header-logo text-dark" href="#">{{ Auth::user()->name }}</a>
+        @endif
       </div>
 
       <div class="col-4 d-flex justify-content-end align-items-center">

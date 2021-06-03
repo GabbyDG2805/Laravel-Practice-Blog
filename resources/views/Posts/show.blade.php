@@ -6,7 +6,7 @@
       <div class="row">
         <div class="col-md-8 blog-main">
         	<h2 class="blog-post-title">{{ $post->title }}</h2>
-  			<p class="blog-post-meta">{{ $post->created_at->toDayDateTimeString() }}
+  			  <p class="blog-post-meta">by {{ $post->user->name }} on {{ $post->created_at->toDayDateTimeString() }}</p>
 
  			<p>{{ $post->body }}</p>
 
