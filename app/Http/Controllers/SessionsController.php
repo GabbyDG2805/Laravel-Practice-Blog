@@ -23,6 +23,7 @@ class SessionsController extends Controller
                 'message' => 'Invalid Email/Password, please try again'
             ]);
         }
+
         return redirect()->home();
     }
 
